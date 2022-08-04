@@ -1,0 +1,99 @@
+.item-output {
+  margin-top: 55px;
+}
+
+.item-form {
+  margin-top: 50px;
+}
+
+.list__item {
+  list-style-type: none;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px 20px 0px 0px;
+  border: 2px outset black;
+}
+
+.shelf {
+  max-width: 250px;
+  padding: 10px 5px 10px 25px;
+  font-size: 20px;
+  color: #353535;
+  border: 2px inset black;
+  border-color: #1b01ff;
+  text-transform: capitalize;
+}
+
+.text-for-explain {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #525252;
+}
+
+.hero {
+  background-image:  linear-gradient(to right, #3c13f6 0%, #93ecfe  57%, #2225e0  100%);
+  padding-bottom: 100px;
+}
+
+.input {
+  width: 200px;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #5550F8 0%,  #6578FA  100%);;
+}
+
+.butn {
+  background-image: linear-gradient(to right, #1c92d2 0%, #93ecfe  51%, #1c92d2  100%);
+  text-align: center;
+  transition: background-position 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.butn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.butn:active{
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 500px) {
+  .item-output {
+    width: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .text-for-explain {
+    text-align: center;
+  }
+
+  .item-form {
+    width: 302px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .input {
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    outline: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #462CF7 0%, #93ecfe  80.1%, #73B4F6  100%);;
+  }
+}
