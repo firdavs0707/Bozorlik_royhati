@@ -13,12 +13,12 @@ form.addEventListener('submit', function(evt){
     item.textContent ='';
   }
 
-
   if (input.value == 0) {
     text.textContent = 'Bozorlik royhatini kiriting!';
     array = [];
     return;
-  } 
+  }
+  
   if (1 == 1) {
     array.push(input.value);
     text.textContent = '';
@@ -26,15 +26,13 @@ form.addEventListener('submit', function(evt){
 
   let item = document.createElement('li');
 
-
-
     for (book of array) {
       list.appendChild(item);
       item.textContent = '';
       item.textContent = book;
     };
 
-    input.value = '';
+  input.value = '';
 });
 
 
