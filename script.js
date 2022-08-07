@@ -1,6 +1,6 @@
 var list = document.querySelector('.list');
 var form = document.querySelector('.form');
-var input = form.querySelector('.input');
+var input = document.querySelector('.input');
 var text = document.querySelector('.text-for-explain')
 
 let array = [];
@@ -8,25 +8,33 @@ let array = [];
 form.addEventListener('submit', function(evt){
   evt.preventDefault();
 
-  
-  array = [];
-  
+  if (array.includes(input.value)) {
+    text.textContent  = 'Bu narsani yozgan edingiz!';
+    item.textContent ='';
+  }
+
+
   if (input.value == 0) {
     text.textContent = 'Bozorlik royhatini kiriting!';
-  } else {
+    array = [];
+    return;
+  } 
+  if (1 == 1) {
     array.push(input.value);
     text.textContent = '';
   }
 
-  input.value = '';
+  let item = document.createElement('li');
 
-  console.log(array);
-  
-  for (book of array) {
-    var item = document.createElement('li');
-    item.textContent = book;
-    list.appendChild(item);
-  };
+
+
+    for (book of array) {
+      list.appendChild(item);
+      item.textContent = '';
+      item.textContent = book;
+    };
+
+    input.value = '';
 });
 
 
